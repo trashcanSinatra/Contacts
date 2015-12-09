@@ -1,0 +1,386 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+}
+
+/* FIXES FOR UI BORDER AND H1 Loading Message */
+h1 {
+	visibility: hidden;
+}
+
+*:focus { outline:none; }
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+/* Template BEGIN */
+
+#container {
+	max-width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clear {
+	clear:both;
+	height:1px;
+}
+
+/* Template END */
+
+
+/* HEADER */
+/* Sets Fixed Header */
+.header-cont {
+    width:100%;
+    position:absolute;
+    top:0px;
+}
+
+#headerBackground {
+	height: 105px;
+	overflow:visible;
+   background: url(../img/black_wood.jpg) no-repeat;
+	max-width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mainHeaderText {
+	position:relative;
+	bottom: 27px;
+	font-family: 'Lato', sans-serif;
+	font-size: 19px;
+	font-weight: lighter;
+	color: #76CA8F;
+	text-transform: none;
+	text-align: center;
+}
+
+header > ul {
+	display: block;
+	background-color: black;
+	max-width: 1120px;
+	position: relative;
+	bottom:35px;
+	height: 95px;
+	opacity: .55;
+}
+
+#headerBtnLeft {
+	position:absolute;
+	right: 10px;
+	top: 30px;
+}
+
+#pc501 {
+	width: 78%;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	text-align: center;
+	font-family: 'Cedarville Cursive', cursive;
+	font-size: 40px;
+	font-weight: lighter;
+	color: #76CA8F;
+}
+
+#headerBtnRight {
+	position:absolute;
+	left: 10px;
+	top: 33px;
+}
+
+#showRight {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 18px;
+	padding-left: 18px;
+	background-color: #76CA8F;
+   color: white;
+   border: 1px solid #d2e018;
+}
+
+#showLeft {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #76CA8F;
+   color: white;
+   border: 1px solid #d2e018;
+	visibility: hidden;
+}
+/* Header: END */
+
+#mainContent {
+	background-color: #f5f6f6;
+	padding-top:105px;
+	min-height: 900px;
+}
+
+#filterToggle {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	padding: 5px 5px;
+	width: 350px;
+}
+
+.toggleBtns {
+	height: 50px;
+	width: 164px;
+	font-family: 'Lato', sans-serif;
+	font-size:24px;
+}
+
+#toggleCompany {
+	background-color: white;
+	color: #FE8B05;
+	border: 1px solid #d2e018;
+	box-shadow: 3px 3px 3px grey;
+	margin-left: 3px;
+}
+
+#togglePerson {
+	background-color: #d2e018;
+	color: #49240a;
+	border: 2px solid #d2e018;
+	box-shadow: 3px 3px grey;
+	margin-right:3px;
+}
+
+h2 {
+	font-size:27px;
+	font-family: 'Cedarville Cursive', cursive;
+	color:#49240a;
+	margin-bottom: 2%;
+	padding-left: 20%;
+	height: 15px;
+	width: 400px;
+}
+
+
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+    border: 1px solid #CAD622;
+    background-color: white;
+    color: #49240a;
+    padding: 10px 5px;
+	 margin-left: 10%;
+	 margin-right: 10%;
+	 width: 80%;
+	 margin-top: 10px;
+    font-size: 1em;
+	 font-family: 'Lato', sans-serif;
+	 align-self: center;
+}
+
+
+/*  Styles for return list on the quick search */
+
+#results {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	padding: 5px 5px;
+	max-width: 500px;
+	font-size: 20px;
+}
+
+.resultLine {
+	width: 100%;
+	margin: 0px;
+	border-bottom: 1px solid #22cad6;
+	padding: 2px 20px;
+}
+
+.resultLine a {
+	font-size: 35px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 5px;
+	color: #70d622;
+	text-shadow: 2px 2px 2px #494E54;
+	opacity: .95;
+}
+
+.resultLine a:hover {
+	color: #bfff00;
+}
+
+.floatLeft {
+	float:left;
+	color: #49240a;
+	font-size: 22px;
+	font-family: 'Alegreya Sans', sans-serif;
+	padding-top: 14px;
+}
+
+#floatAdjust {
+	position: relative;
+	top: 10px;
+}
+
+#floatLeftCompany {
+	float:left;
+	color: #49240a;
+	font-size: 22px;
+	font-family: 'Alegreya Sans', sans-serif;
+	height: 50px;
+	position: relative;
+	top: 5px;
+}
+
+#floatLeftCompany span {
+	font-size: 18px;
+	color: #FE8B05;
+	position: relative;
+	bottom: 5px;
+}
+
+.floatRight {
+	float:right;
+}
+
+.phoneIcon {
+	position: relative;
+	top: 8px;
+}
+
+#phoneText {
+	font-size: 24px;
+	color: #FE8B05;
+	width: 150px;
+	margin-right: 40px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.emailIcon {
+	position: relative;
+	top: 3px;
+}
+
+
+#linkFix {
+	font-size: 22px;
+	font-family: 'Alegreya Sans', sans-serif;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	margin: 0px;
+	color: #49240a;
+	text-shadow: none;
+	position: relative;
+	right: 14px;
+}
+
+a#linkFix:hover {
+	color: #22cad6;
+}
+
+.biz_span {
+	font-size: 12px;
+	color: #FE8B05;
+	position: relative;
+	bottom: 10px;
+	font-weight: 100;
+}
+
+#noMatch {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	padding: 5px 5px;
+	max-width: 500px;
+	font-size: 20px;
+	text-align: center;
+	font-size: 22px;
+	color: #49240a; 
+}
+
+@media screen and (min-width: 480px) {
+	.floatLeft {
+		float:left;
+		color: #49240a;
+		font-size: 22px;
+		font-family: 'Alegreya Sans', sans-serif;
+		padding-top: 20px;
+		height: 50px;
+	}
+
+	#floatLeftCompany {
+		position: relative;
+		bottom: 5px;
+	}
+
+	.floatRight {
+		float:right;
+		height: 50px;
+	}
+
+	.floatRight i {
+		margin-top: 10px;
+	}
+
+	.resultLine {
+		width: 100%;
+		margin: 0px;
+		border-bottom: 1px solid #22cad6;
+		padding: 2px 20px;
+		height: 60px;
+	}
+
+	#floatLeftCompany span {
+		color: #70d622;
+	}
+
+	#phoneText {
+		font-size: 24px;
+		color: #FE8B05;
+		font-family: 'Josefin Sans', sans-serif;
+		position: relative;
+		left: 55px;
+	}
+
+}
