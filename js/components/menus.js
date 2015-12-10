@@ -51,7 +51,6 @@ $('#togglePerson').mousedown(function() {
    } else {
 
       $(this).css({
-
          "background-color" : "rgb(210, 224, 24)",
          "color" : "#49240a",
          "border-color" : "rgb(210, 224, 24)",
@@ -59,7 +58,6 @@ $('#togglePerson').mousedown(function() {
          "box-shadow" : "3px 3px grey"
       });
       $company.css({
-
          "background-color" : "white",
          "color" : "#FE8B05",
          "border-color" : "rgb(210, 224, 24)",
@@ -117,6 +115,7 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
     body = document.body,
     LeftMenu = document.getElementById('leftPane'),
     RightMenu = document.getElementById('rightPane');
+var newCallLink = $('#newCallLnk');
 
 // Handle clicks for showing menue on top nav buttons.
 
@@ -126,6 +125,16 @@ showLeft.onclick = function() {
     classie.toggle( body, 'cbp-spmenu-push-toleft' );
     classie.toggle( menuRight, 'cbp-spmenu-open' );
     disableOther( 'showLeft' );
+};
+
+
+newCallLnk.onclick = function() {
+
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+   
 };
 
 showRight.onclick = function() {
