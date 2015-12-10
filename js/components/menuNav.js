@@ -1,22 +1,22 @@
 var navigationMenu = (function() {
+      //Main Nav Links
+      var addyBookLink = $('#bookLink');
+      var newCallLink = $('#newCallLink');
 
-      var addyBookLink = $('#addyBookLink');
-      var newCallLink = $('#newCallLnk');
+      //Main Nav Div Targets
       var mainContent = $('#mainContent');
       var viewNewCall = $('#view_newCall');
-      var datePicker = $('#datepicker');
-      var rightMenu = document.getElementById( 'showRight' );
 
-      var page_setup = (function() {
+
+      var setup_page = (function() {
           viewNewCall.hide();
       })();
 
-      var activate = function() {
+      var activate = (function() {
 
          newCallLink.click(function() {
             mainContent.hide();
             viewNewCall.show();
-            datePicker.datepicker();
          });
 
          addyBookLink.click(function() {
@@ -24,6 +24,5 @@ var navigationMenu = (function() {
             mainContent.show();
          });
 
-
-      }()();
+      })();
 })();
