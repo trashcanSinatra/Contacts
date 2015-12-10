@@ -108,52 +108,100 @@ window.twinkleBtns = function(c, btn) {
 
 // Define variables for menu divs, swipe regions.
 
-var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-    menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-    showLeft = document.getElementById( 'showLeft' ),
-    showRight = document.getElementById( 'showRight' ),
-    body = document.body,
-    LeftMenu = document.getElementById('leftPane'),
-    RightMenu = document.getElementById('rightPane');
-var newCallLink = $('#newCallLnk');
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' );
+    var menuRight = document.getElementById( 'cbp-spmenu-s2' );
+    var showLeft = document.getElementById( 'showLeft' );
+    var showRight = document.getElementById( 'showRight' );
+    var body = document.body;
+    var LeftMenu = document.getElementById('leftPane');
+    var RightMenu = document.getElementById('rightPane');
+    var whole = document.getElementById('wholesale');
+    var cont = document.getElementById('contractor');
+    var eng = document.getElementById('engineer');
+    var newContact = document.getElementById('newContact');
+    var salesCalls = document.getElementById('salesCalls');
+    var bookLink = document.getElementById('bookLink');
+    var newCall = document.getElementById('newCallLink');
 
 // Handle clicks for showing menue on top nav buttons.
 
 showLeft.onclick = function() {
-
-    classie.toggle( this, 'active' );
-    classie.toggle( body, 'cbp-spmenu-push-toleft' );
-    classie.toggle( menuRight, 'cbp-spmenu-open' );
-    disableOther( 'showLeft' );
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toleft' );
+   classie.toggle( menuRight, 'cbp-spmenu-open' );
+   disableOther( 'showLeft' );
 };
 
-
-newCallLnk.onclick = function() {
-
+showRight.onclick = function() {
    classie.toggle( this, 'active' );
    classie.toggle( body, 'cbp-spmenu-push-toright' );
    classie.toggle( menuLeft, 'cbp-spmenu-open' );
    disableOther( 'showRight' );
-   
 };
 
-showRight.onclick = function() {
-
-    classie.toggle( this, 'active' );
-    classie.toggle( body, 'cbp-spmenu-push-toright' );
-    classie.toggle( menuLeft, 'cbp-spmenu-open' );
-    disableOther( 'showRight' );
+whole.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
 };
 
+eng.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+};
+
+newCall.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+};
+
+salesCalls.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+};
+
+bookLink.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+};
+
+newContact.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+};
+
+cont.onclick = function() {
+   twinkleBtns(0, showRight);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toright' );
+   classie.toggle( menuLeft, 'cbp-spmenu-open' );
+   disableOther( 'showRight' );
+};
 // Disable other button
 
 function disableOther( button ) {
-    if( button !== 'showLeft' ) {
-        classie.toggle( showLeft, 'disabled' );
-    }
-    if( button !== 'showRight' ) {
-        classie.toggle( showRight, 'disabled' );
-    }
+   if( button !== 'showLeft' ) {
+     classie.toggle( showLeft, 'disabled' );
+   }
+   if( button !== 'showRight' ) {
+     classie.toggle( showRight, 'disabled' );
+   }
 }
-
 })();
