@@ -1,10 +1,13 @@
 var service = contactService;
-var menu = navigationMenu;
+var Navigation = navigationMenu;
+
+var datePicker = $('#datepicker');
 
 $( document ).on( "pageinit", function( event ) {
+   datePicker.datepicker();
 $('#addressBook').on('keyup', function() {
     service.quick_search(this.value);
-    menu.setup_page();
-    menu.activate();
+    navigation.setup_page();
+    navigation.activate();
 });
 });
