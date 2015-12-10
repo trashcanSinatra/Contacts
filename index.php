@@ -31,13 +31,13 @@
 	<div id="container">
 	  <div id="leftPane">
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-			<a id="addyBookLink" href="#">Address Book</a>
-			<a href="#">Wholesalers</a>
-			<a href="#">Contractors</a>
-			<a href="#">Engineers</a>
-			<a href="#">New Contact</a>
-			<a href="#">Sales Calls</a>
-			<a id="newCallLnk" href="#">New Call</a>
+			<a id="bookLink" rel="external" href="">Address Book</a>
+			<a id="wholesale" rel="external" href="">Wholesalers</a>
+			<a id="contractor" rel="external" href="">Contractors</a>
+			<a id="engineer" rel="external" href="">Engineers</a>
+			<a id="newContact" rel="external" href="">New Contact</a>
+			<a id="salesCalls" rel="external" href="">Sales Calls</a>
+			<a id="newCallLink" rel="external" href="">New Call</a>
 		</nav>
 	</div>
 	<div id="rightPane">
@@ -86,13 +86,16 @@
 		<input id="addressBook" type="text" placeholder="Search Contacts..." />
 		</div>
 
-		<div id="results"></div>
-	</div> <!-- End Main Content -->
+		<div id="results">
 
+		</div>
+
+
+	</div> <!-- End Main Content -->
 
 	<div id="view_newCall">
 		<h2 id="newCallHeader"> New Sales Call </h2>
-		<p>Date: <input type="text" id="datepicker"></p>
+	   <p>Date: <input type="text" id="datepicker"></p>
 	</div>
 
 
@@ -100,10 +103,10 @@
 
 
 <script src="js/vendor/classie.js"></script>
-<script src="js/components/menus.js"></script>
-<script src="js/components/menuNav.js"></script>
 <script src="js/templates/phoneBookTemplate.js"></script>
 <script src="js/services/phoneBookService.js"></script>
+<script src="js/components/menus.js"></script>
+<script src="js/components/menuNav.js"></script>
 <script src="js/app.js"></script>
 
 </div>  <!-- End Container -->
