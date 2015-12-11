@@ -1,9 +1,7 @@
 var navigationMenu = (function() {
-      //Main Nav Links
+
       var addyBookLink = $('#bookLink');
       var newCallLink = $('#newCallLink');
-
-      //Main Nav Div Targets
       var mainContent = $('#mainContent');
       var viewNewCall = $('#view_newCall');
 
