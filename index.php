@@ -9,13 +9,9 @@
 		<meta name="author" content="Codrops" />
 
 		<!-- <link rel="stylesheet" type="text/css" href="css/hover-min.css" /> -->
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<link rel="stylesheet" type="text/css" href="css/newCall.css" />
 		<link rel="stylesheet" type="text/css" href="css/slide.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		<!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
     	<link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive'rel='stylesheet'type='text/css'>
     	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
@@ -24,6 +20,7 @@
 	   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 	   <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 	</head>
 <!-- SLIDE MENUS -->
 
@@ -93,14 +90,25 @@
 
 	</div> <!-- End Main Content -->
 
+
 	<div id="view_newCall">
 		<h2 id="newCallHeader"> New Sales Call </h2>
-	   <p>Date: <input type="text" id="datepicker"></p>
+		<div>
+	   	<input type="text" id="datepicker" placeholder="Select Date...">
+		</div>
+		<br />
+		<div>
+			<textarea id="notes_box">General Notes...</textarea>
+		</div>
+		<div id="selector_div">
+			<button class="call_selector_btns">Topics</button>
+			<br />
+			<button class="call_selector_btns">Meetings</button>
+		</div>
 	</div>
 
 
 	</div>  <!-- End Container -->
-
 
 <script src="js/vendor/classie.js"></script>
 <script src="js/templates/phoneBookTemplate.js"></script>
