@@ -9,9 +9,11 @@
 	font-size: 20px;
 	padding: 20px;
 	margin: 0;
-	font-weight: 300;
+	font-weight: 400;
 	background: #76CA8F;
 	opacity: .90;
+	font-family: 'Lato', sans-serif;
+	border-bottom: 1px solid #49240a;
 }
 
 .cbp-spmenu a {

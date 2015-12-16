@@ -38,20 +38,32 @@ textarea:focus {
     height: 250px;
 }
 
-
-.call_selector_btns {
+#selector_div {
    width: 80%;
    margin-top: 14px;
    margin-left: 10%;
    margin-right: 10%;
-   padding-top: 12px;
-   padding-bottom: 12px;
-   padding-right: 10%;
-   padding-left: 10%;
+}
+
+#selector_div button{
+   width: 100%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   margin-top: 3%;
    background-color: #CAD622;
    color: #49240a;
    border: 1px solid #3ea05b;
    font-size: 20px;
    font-weight: 200;
    font-family: 'Lato', sans-serif;
+}
+
+#selector_div span {
+   float: right;
+   padding-right: 5%;
+}
+
+#selector_div i {
+   float: left;
+   padding-left: 4%;
 }

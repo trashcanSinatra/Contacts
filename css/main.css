@@ -81,7 +81,7 @@ a:hover {
 }
 
 #headerBackground {
-	height: 105px;
+	height: 95px;
 	overflow:visible;
    background: url(../img/brown_wood.jpg) no-repeat;
 	max-width: 1120px;
@@ -135,22 +135,24 @@ header > ul {
 }
 
 #showRight {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-right: 18px;
-	padding-left: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 16px;
+	padding-left: 16px;
 	background-color: #76CA8F;
    color: white;
+	font-size: 18px;
    border: 1px solid #d2e018;
 }
 
 #showLeft {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 16px;
+	padding-left: 16px;
 	background-color: #76CA8F;
    color: white;
+	font-size: 18px;
    border: 1px solid #d2e018;
 }
 /* Header: END */
