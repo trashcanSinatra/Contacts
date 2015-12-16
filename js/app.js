@@ -5,7 +5,8 @@ $( document ).on( "pageinit", function( event ) {
       changeMonth: true,
       changeYear: true
     });
-    
+
+
 
    $('#addressBook').on('keyup', function() {
        service.quick_search(this.value);
