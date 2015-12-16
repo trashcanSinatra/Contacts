@@ -7,11 +7,11 @@
 		<title>pc501</title>
 		<meta name="description" content="pc501 - Aspinall Contacts" />
 		<meta name="author" content="Codrops" />
-
-		<!-- <link rel="stylesheet" type="text/css" href="css/hover-min.css" /> -->
+		
 		<link rel="stylesheet" type="text/css" href="css/slide.css" />
+		<link rel="stylesheet" type="text/css" href="css/modal.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="css/jquery-ui.theme.css">
     	<link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive'rel='stylesheet'type='text/css'>
     	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	 	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300' rel='stylesheet' type='text/css'>
@@ -39,7 +39,8 @@
 	</div>
 	<div id="rightPane">
 		<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-		<h3>Contacts</h3>
+		<a id="addTopic" rel="external"  class="md-trigger" data-modal="newTopic_mdl" href="">New Topic</a>
+		<a id="addMeeting" rel="external" class="md-trigger" data-modal="newMtg_mdl"  href="">New Meeting</a>
 		</div>
 	</div>
 
@@ -53,7 +54,7 @@
 		   <div id="headerBtnLeft">
 		   <button id="showLeft" style="backgroundColor:#76CA8F;"
 		   	onmousedown="twinkleBtns(0, this)">
-			<i class="fa fa-search"></i>
+			<i class="fa fa-flask" style="font-size:20px;"></i>
 		   </button>
 		   </div>
 
@@ -67,6 +68,38 @@
 	</header>
    </div>
 
+<!-- New Sales Call Modal Windows -->
+
+	<div class="md-modal md-effect-2" id="newTopic_mdl">
+		<div class="md-content">
+			<h3>Add Topic</h3>
+			<div>
+				<p>This is a modal window. You can do the following things with it:</p>
+				<ul>
+					<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+					<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+					<li><strong>Close:</strong> click on the button below to close the modal.</li>
+				</ul>
+				<button class="md-close">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="md-modal md-effect-2" id="newMtg_mdl">
+		<div class="md-content">
+			<h3>Add Meeting</h3>
+			<div>
+				<p>This is a modal window. You can do the following things with it:</p>
+				<ul>
+					<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+					<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+					<li><strong>Close:</strong> click on the button below to close the modal.</li>
+				</ul>
+				<button class="md-close">Cancel</button>
+			</div>
+		</div>
+	</div>
 
 	<div id="mainContent">
 		<div id="filterToggle">
@@ -83,11 +116,7 @@
 		<input id="addressBook" type="text" placeholder="Search Contacts..." />
 		</div>
 
-		<div id="results">
-
-		</div>
-
-
+		<div id="results"></div>
 	</div> <!-- End Main Content -->
 
 
@@ -101,9 +130,9 @@
 			<textarea id="notes_box">General Notes...</textarea>
 		</div>
 		<div id="selector_div">
-			<button class="call_selector_btns">Topics</button>
+			<button><span>0</span>Topics<i class="fa fa-chevron-down"></i></button>
 			<br />
-			<button class="call_selector_btns">Meetings</button>
+			<button><span>0</span>Meetings<i class="fa fa-chevron-down"></i></button>
 		</div>
 	</div>
 
@@ -116,6 +145,17 @@
 <script src="js/components/menus.js"></script>
 <script src="js/components/menuNav.js"></script>
 <script src="js/app.js"></script>
+
+<script src="js/vendor/modalEffects.js"></script>
+
+<!-- for the blur effect -->
+<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+<script>
+	// this is important for IEs
+	var polyfilter_scriptpath = '/js/';
+</script>
+<script src="js/vendor/cssParser.js"></script>
+<script src="js/vendor/css-filters-polyfill.js"></script>
 
 </div>  <!-- End Container -->
 </body>
