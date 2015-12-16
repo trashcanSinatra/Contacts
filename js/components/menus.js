@@ -122,6 +122,8 @@ window.twinkleBtns = function(c, btn) {
     var salesCalls = document.getElementById('salesCalls');
     var bookLink = document.getElementById('bookLink');
     var newCall = document.getElementById('newCallLink');
+    var newTopic = document.getElementById('addTopic');
+    var newMtg = document.getElementById('addMeeting');
 
 // Handle clicks for showing menue on top nav buttons.
 
@@ -137,6 +139,22 @@ showRight.onclick = function() {
    classie.toggle( body, 'cbp-spmenu-push-toright' );
    classie.toggle( menuLeft, 'cbp-spmenu-open' );
    disableOther( 'showRight' );
+};
+
+newTopic.onclick = function() {
+   twinkleBtns(0, showLeft);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toleft' );
+   classie.toggle( menuRight, 'cbp-spmenu-open' );
+   disableOther( 'showLeft' );
+};
+
+newMtg.onclick = function() {
+   twinkleBtns(0, showLeft);
+   classie.toggle( this, 'active' );
+   classie.toggle( body, 'cbp-spmenu-push-toleft' );
+   classie.toggle( menuRight, 'cbp-spmenu-open' );
+   disableOther( 'showLeft' );
 };
 
 whole.onclick = function() {
